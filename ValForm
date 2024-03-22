@@ -1,0 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevenir el envío estándar del formulario
+
+            // Validación de ejemplo
+            var name = document.getElementById("name").value;
+            if (name.length < 3) {
+                alert("Por favor, introduce un nombre válido.");
+                return false;
+            }
+
+            // Aquí podrías agregar más validaciones...
+
+            // Si todo está correcto, proceder con el envío del formulario (e.g., via AJAX)
+            alert("Formulario enviado con éxito!");
+        });
+    }
+});

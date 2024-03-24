@@ -1,20 +1,55 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var contactForm = document.getElementById("contactForm");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function(e) {
-            e.preventDefault(); // Prevenir el envío estándar del formulario
+//Formulario de registro.
 
-            // Validación de ejemplo
-            var name = document.getElementById("name").value;
-            if (name.length < 3) {
-                alert("Por favor, introduce un nombre válido.");
-                return false;
-            }
-
-            // Aquí podrías agregar más validaciones...
-
-            // Si todo está correcto, proceder con el envío del formulario (e.g., via AJAX)
-            alert("Formulario enviado con éxito!");
-        });
-    }
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario semana 2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="javascript.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h2 style="text-align: center;">Registro</h2>
+    <div class="formulario">
+        <form action="registrar.html" method="post">
+            <div class="campo">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="campo">
+                <input type="text" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="campo">
+                <input type="text" id="nombreDeUsuario" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="campo">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="campo">
+                <label for="fechaNac">Fecha de Nacimiento</label>
+                <br>
+                <input type="date" id="fechaNac" placeholder="Fecha de Nacimiento" required>
+            </div>
+            <div class="campo">
+                <input type="text" id="direccion" placeholder="Dirección de despacho">
+            </div>
+            <div class="campo">
+                <input type="password" id="contraseña" placeholder="Contraseña (6 a 18 caracteres)" required>
+            </div>
+            <div class="campo">
+                <input type="password" id="reoetirContraseña" placeholder="Repetir contraseña" required>
+            </div>
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <br>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div>
+                <button onclick="miFuncion()">Ingresar</button>
+                <input type="reset" value="Limpiar" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

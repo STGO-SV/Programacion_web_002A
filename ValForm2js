@@ -1,0 +1,52 @@
+// Validación del formulario
+
+function validateForm() {
+    var fullName = document.getElementById('full-name').value;
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+    var dob = new Date(document.getElementById('dob').value);
+    var today = new Date();
+    var age = today.getFullYear() - dob.getFullYear();
+    var m = today.getMonth() - dob.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+        age--;
+    }
+
+    if (fullName.trim() === '' || username.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPassword.trim() === '' || dob === '') {
+        alert('El campo es obligatorio.');
+        return false;
+    }
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert('Formato de correo incorrecto.');
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert('La contraseña no coincide.');
+        return false;
+    }
+
+    if (!/(?=.*\d)(?=.*[A-Z])/.test(password)) {
+        alert('La contraseña debe contener por lo menos un número y una mayúscula.');
+        return false;
+    }
+
+    if (password.length < 6 || password.length > 18) {
+        alert('La contraseña debe contener entre 6 y 18 caracteres.');
+        return false;
+    }
+
+    if (age < 13) {
+        alert('Debes tener al menos 13 años para registrarte.');
+        return false;
+    }
+
+    return true;
+}
+
+function clearForm() {
+    document.getElementById('registrationForm').reset();
+}

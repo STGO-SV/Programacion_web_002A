@@ -122,7 +122,7 @@ const categoriaData = [
 let allGames = []; // almacenamos los juegos
 
 async function loadGames() {
-    /*try { // Aquí comenté todo este bloque para inhabilitarlo porque no permitía cargar directamente los datos desde el .json que finalmente descarté.
+    /*try {
       const response = await fetch('jsonData.json');
       allGames = await response.json();
   
@@ -136,8 +136,9 @@ async function loadGames() {
 function displayGames(gamesList, displaydescripcion = false, filtroCategoria = null, filtroId = null) {
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = ''; // Limpiar el contenido actual
-
-    let filteredGames = gamesList;
+    var formContent = document.getElementById('formContent');            
+            formContent.style.display = 'none';
+            let filteredGames = gamesList;
 
     // Filtrar juegos por categoría si se proporciona
     if (filtroCategoria) {
@@ -197,5 +198,3 @@ function displayGames(gamesList, displaydescripcion = false, filtroCategoria = n
 function filterByCategory(filtroCategoria) {
     displayGames(gamesData, false, filtroCategoria);
 }
-
-document.addEventListener('DOMContentLoaded', loadGames);

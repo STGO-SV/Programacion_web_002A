@@ -1,0 +1,93 @@
+/* Formulario - Estilo Detallado */
+
+/* Aplicar estilos base del formulario */
+.formulario {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 2px 4px var(--color-sombra);
+    background-color: var(--color-fondo-descripcion);
+    border-radius: 10px;
+}
+
+/* Título del formulario */
+.formulario h2 {
+    color: var(--color-titulo);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilizar cada campo del formulario */
+.campo {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas de los campos */
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+/* Personalizar los inputs y selectores */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="date"],
+.campo input[type="number"],
+.campo select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid var(--color-borde);
+    border-radius: 5px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: 16px;
+}
+
+/* Interacción con los inputs */
+.campo input[type="text"]:focus,
+.campo input[type="email"]:focus,
+.campo input[type="password"]:focus,
+.campo input[type="date"]:focus,
+.campo input[type="number"]:focus,
+.campo select:focus {
+    border-color: var(--color-titulo);
+    outline: none;
+}
+
+/* Estilos para los botones */
+button,
+input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Botón de acción principal */
+button {
+    background-color: var(--color-titulo);
+    color: var(--color-texto);
+}
+
+/* Botón para limpiar el formulario */
+input[type="reset"] {
+    background-color: var(--color-borde);
+    color: var(--color-header);
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button:hover,
+input[type="reset"]:hover {
+    opacity: 0.8;
+}

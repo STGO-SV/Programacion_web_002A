@@ -1,14 +1,181 @@
-/* css/estilos.css */
+/* Colores base del sitio tomados del logo */
+:root {
+    --color-fondo: #2c3e50;
+    --color-fondo-descripcion: #34495e;
+    --color-borde: #ccc;
+    --color-sombra: rgba(0,0,0,0.1);
+    --color-texto: #ecf0f1;
+    --color-titulo: #e74c3c;
+    --color-precio: #f1c40f;
+    --color-header: #333;
+    --color-nav: #f4f4f4;
+    --color-nav-hover: #ddd;
+    --color-link: #333;
+}
+
 body {
-    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    margin: 0;
 }
 
-h1 {
-    color: #100259;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-header);
+    color: white;
+    padding: 1rem;
+    width: 100%;
 }
 
-.navbar {
-    background-color: #fbfcfd;
-    color: #ffffff;
+#site-logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+nav {
+    flex: 0 0 200px;
+    background-color: var(--color-nav);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--color-link);
+    cursor: pointer;
+}
+
+nav li a:hover {
+    background-color: var(--color-nav-hover);
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.article-container {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 2px 4px var(--color-sombra);
+    background-color: var(--color-fondo);
+}
+
+.article-image,
+.category-image {
+    max-width: 150px;
+    height: auto;
+}
+
+.article-title {
+    font-size: 20px;
+    color: var(--color-titulo);
+    margin: 10px 0;
+}
+
+.article-price {
+    font-size: 18px;
+    color: var(--color-precio);
+    margin: 5px 0;
+}
+
+.article-description {
+    font-size: 16px;
+    color: var(--color-texto);
+    margin: 10px 0;
+    background-color: var(--color-fondo-descripcion);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game-container {
+    border: 1px solid var(--color-borde);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--color-fondo);
+}
+
+.game-container h3 {
+    margin: 0.5rem 0;
+    color: var(--color-titulo);
+}
+
+.formulario {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 2px 4px var(--color-sombra);
+    background-color: var(--color-fondo-descripcion);
+    border-radius: 5px;
+}
+
+.formulario h2 {
+    color: var(--color-titulo);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="date"],
+.campo input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-titulo);
+}
+
+button,
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--color-titulo);
+    color: var(--color-texto);
+}
+
+input[type="reset"] {
+    background-color: var(--color-borde);
+    color: var(--color-header);
+}
+
+button:hover,
+input[type="reset"]:hover {
+    opacity: 0.9;
 }

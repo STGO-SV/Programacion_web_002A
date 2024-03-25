@@ -1,5 +1,3 @@
-/* Formulario - Estilo Detallado */
-
 /* Aplicar estilos base del formulario */
 .formulario {
     width: 90%;
@@ -90,4 +88,13 @@ input[type="reset"] {
 button:hover,
 input[type="reset"]:hover {
     opacity: 0.8;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
 }

@@ -1,0 +1,201 @@
+const gamesData = [
+    {
+        "id": 1,
+        "categoria": "Acción-aventura",
+        "imagen": "jedisurvivor.jpg",
+        "nombre": "STAR WARS Jedi: Survivor",
+        "edicion": "Edición Estándar",
+        "precio": "$69.990",
+        "descripcion": "La historia de Cal Kestis continúa en STAR WARS Jedi: Survivor™, una nueva aventura épica que llevará a Cal a nuevas fronteras en una lucha por proteger a la galaxia y evitar que se suma de lleno en la oscuridad.\nSTAR WARS Jedi: Survivor™ retoma cinco años después de los eventos de STAR WARS Jedi: Fallen Order™. Cal debe mantenerse un paso por delante de la constante persecución del Imperio mientras continúa sintiendo el peso de ser uno de los últimos Jedi que quedan en la galaxia.\nDesarrollado por el equipo veterano de Respawn Entertainment, Jedi: Survivor ampliará las icónicas historias, mundos y personajes de STAR WARS, y el emocionante combate experimentado por primera vez en Jedi: Fallen Order.\nSTAR WARS Jedi: Survivor se está desarrollando para la generación actual de hardware de videojuegos para crear una experiencia de STAR WARS más profunda y expansiva para los jugadores de todo el mundo cuando el juego se lance en 2023."
+    },
+    {
+        "id": 2,
+        "categoria": "Acción-aventura",
+        "imagen": "gowr.jpg",
+        "nombre": "God of War Ragnarok",
+        "edicion": "Edición Estándar",
+        "precio": "$74.990",
+        "descripcion": "Embárcate en un viaje mítico en busca de respuestas y aliados, mientras que Kratos y Atreus se preparan para el Ragnarök.\nDesde Santa Monica Studio llega la secuela del aclamado por la crítica God of War (2018). Fimbulvetr ya está en camino. Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo. En el camino explorarán paisajes increíbles y míticos, y se enfrentarán a aterradores enemigos en la forma de dioses nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos.\nUn futuro sin horizontes\nAtreus busca conocimiento que lo ayude a entender la profecía de \"Loki\" y establecer su rol en Ragnarök. Kratos debe decidir entre quedarse atado al miedo de repetir sus errores o librarse del pasado para ser el padre que Atreus necesita.\nInstrumentos de guerra\nEl hacha Leviatán, las Espadas del Caos y el Escudo de Guardián regresan junto con una amplia variedad de nuevas habilidades para Kratos y Atreus. Las habilidades espartanas mortales de Kratos se pondrán a prueba como nunca antes, mientras pelea contra dioses y monstruos en los nueve reinos para proteger a su familia.\nExplora inmensos reinos\nViaja a través de peligrosos e increíbles paisajes a la vez que te enfrentas a una variedad de criaturas enemigas, monstruos y dioses nórdicos mientras que Kratos y Atreus buscan respuestas."
+    },
+    {
+        "id": 3,
+        "categoria": "Deporte",
+        "imagen": "BF2022.jpg",
+        "nombre": "Bassmaster Fishing 2022",
+        "edicion": "Edición Deluxe",
+        "precio": "$39.990",
+        "descripcion": "Bassmaster© Fishing 2022, el videojuego oficial, ya está disponible y trae consigo la emoción de la pesca de lubinas competitiva a PS4, PS5. Sumérgete en el contenido con licencia completa de la serie Bassmaster, con eventos tanto amateur como de élite.\nPor primera vez podrás competir como (y contra) 10 pescadores profesionales del tour de élite, en 8 lugares diferentes del mundo real. Escala posiciones, consigue patrocinadores y avanza en tu carrera B.A.S.S. para llegar a lo más alto del Bassmaster Classic. O sal al agua y compite con otros jugadores en una variedad de modos multijugador completamente nuevos, para conquistar las clasificaciones globales.\nCaracterísticas:\n• Modo de carrera: compite en las series College y Élite, y los abiertos para llegar hasta el Bassmaster Classic y alzarte con la victoria.\n• 10 pescadores profesionales: Compite como (o contra) pescadores de élite como Scott Martin, Hank Cherry y otros 8 pescadores profesionales oficiales.\n• Nuestro multijugador más amplio: embárcate en los modos en línea de Bassmaster© Fishing 2022. Asciende en la clasificación, disfruta de los modos de juego entre plataformas o gana en Bassmaster Royale.\nDigital Deluxe Edition:\n• Bassmaster Fishing 2022 para PS5™\n• Casco para botes Bassmaster Fishing\n• Aparejos de marca B.A.S.S\n• Desafíos de Deluxe Edition"
+    },
+    {
+        "id": 4,
+        "categoria": "Deporte",
+        "imagen": "mnfl22.jpg",
+        "nombre": "MADDEN NFL 22",
+        "edicion": "Edición Estándar",
+        "precio": "$14.990",
+        "descripcion": "MADDEN NFL 22\nEL DÍA DEL PARTIDO ESTÁ AQUÍ\n¡Juega Madden NFL 22 ahora! Todo lo que te gusta de la NFL, toda la emoción y toda la diversión del día del partido está en todos los modos con el NUEVO día del partido dinámico**.\nPERFECCIONA TUS HABILIDADES EN EL CAMPO\nÚnete a EA Play† y obtén acceso ilimitado a The Play List, una colección de series favoritas de los aficionados y grandes títulos. ¡Empieza a entrenar para una nueva temporada de Madden entrando hoy en Madden NFL 22!"
+    },
+    {
+        "id": 5,
+        "categoria": "Estrategia",
+        "imagen": "xcom2.jpeg",
+        "nombre": "XCom 2 Collection",
+        "edicion": "Edición Collection",
+        "precio": "$44.9900",
+        "descripcion": "XCOM 2 Collection\nXCOM® 2 Collection incluye el galardonado juego de estrategia XCOM 2, 4 packs de contenido descargable y la expansión War of the Chosen. Activa cualquiera de los contenidos adicionales o disfruta del juego básico.\nXCOM® 2\nLos alienígenas controlan la Tierra con promesas de un futuro brillante para la humanidad que ocultan sus siniestros y oscuros fines. Como líder de una fuerza de guerrilla que se enfrenta a lo imposible, debes prender la llama de una resistencia global para eliminar la amenaza alienígena y salvar a la humanidad de la extinción.\nXCOM® 2: War of the Chosen\nEsta expansión añade una gran cantidad de nuevo contenido en la lucha contra ADVENT, como nuevas clases de héroe y nuevos y poderosos enemigos, además de nuevas misiones, entornos y una mayor profundidad estratégica.\nCUATRO PACKS DE CONTENIDO DESCARGABLE\n• Pack Guerrero de la resistencia: personaliza tu pelotón con nuevos atuendos, cascos, pinturas de guerra faciales y blindajes personalizados.\n• Hijos de la anarquía: este pack de contenido incluye más de 100 nuevas personalizaciones para las armaduras disponibles para tus soldados de XCOM. Estas opciones son puramente estéticas y no alteran los atributos del soldado.\n• Cazadores de alienígenas: transforma a los soldados de XCOM en un pelotón de cazadores de alienígenas de élite equipados con impresionantes armas y armaduras nuevas, y enfréntate a los nuevos alienígenas dominadores, que perseguirán a tu pelotón durante toda la campaña. Incluye mejoras estéticas adicionales para los soldados y el Avenger, además de una nueva y épica misión en la que el jefe central Bradford se pondrá al frente del pelotón.\n• El último regalo de Shen: investiga las \"Torres perdidas\" de ADVENT, donde la ingeniera jefe Lily Shen acompaña a tu pelotón en busca del misterioso proyecto final de su difunto padre. Descubre una nueva clase de soldado con potentes habilidades de combate, capacidades estratégicas y opciones de personalización."
+    },
+    {
+        "id": 6,
+        "categoria": "Estrategia",
+        "imagen": "civ6.jpg",
+        "nombre": "Civilization VI",
+        "edicion": "Edición Estándar",
+        "precio": "$12.990",
+        "descripcion": "Civilization, creado originalmente por el legendario diseñador de videojuegos Sid Meier, es un juego de estrategia por turnos en el que tu objetivo es construir un imperio que resista el paso del tiempo. Explora nuevos territorios, investiga tecnologías, conquista a tus enemigos y enfréntate cara a cara a los líderes más famosos de la historia para crear la mayor civilización jamás conocida."
+    },
+    {
+        "id": 7,
+        "categoria": "Terror",
+        "imagen": "aw2.jpg",
+        "nombre": "Alan Wake II",
+        "edicion": "Edición Estándar",
+        "precio": "$29.100",
+        "descripcion": "Mientras intenta resolver un homicidio ritual en el aparentemente tranquilo pueblo de Bright Falls en Washington, la detective Saga Anderson terminará convirtiéndose en la protagonista de una historia de horror."
+    },
+    {
+        "id": 8,
+        "categoria": "Terror",
+        "imagen": "ln2.jpg",
+        "nombre": "Little Nightmares II",
+        "edicion": "Edición Estándar",
+        "precio": "$14.900",
+        "descripcion": "Little Nightmares II es un videojuego de terror y aventura desarrollado por Tarsier Studios y publicado por Bandai Namco Entertainment. Es la secuela del aclamado juego \"Little Nightmares\" y continúa la historia de Six, la protagonista del primer juego, mientras se une a un nuevo personaje llamado Mono en una oscura y perturbadora aventura.\nEn \"Little Nightmares II\", los jugadores asumen el papel de Mono, un niño con una bolsa en la cabeza, que se embarca en un viaje aterrador a través de un mundo retorcido y surrealista lleno de pesadillas. Mono se encuentra con Six, quien se convierte en su compañera de viaje y juntos se enfrentan a numerosos peligros y desafíos mientras intentan desentrañar los misterios de The Signal Tower.\nEl juego presenta una jugabilidad de plataformas y rompecabezas, donde los jugadores deben superar obstáculos, evadir enemigos y resolver acertijos para avanzar en la historia. A lo largo de su viaje, Mono y Six se encontrarán con una variedad de personajes extraños y aterradores, cada uno con sus propias intenciones y motivaciones.\n\"Little Nightmares II\" se destaca por su atmósfera opresiva y su estilo visual distintivo, con escenarios detallados y personajes grotescos que crean una sensación de inquietud y tensión. La música y los efectos de sonido juegan un papel importante en la creación de una experiencia escalofriante y envolvente.\nEl juego también explora temas oscuros y perturbadores, como el miedo, la soledad y la manipulación. A medida que los jugadores avanzan en la historia, descubrirán secretos ocultos y desvelarán la verdad detrás de la pesadilla que los rodea.\nCon una mezcla de elementos de horror, plataformas y puzzles, \"Little Nightmares II\" ofrece una experiencia inmersiva y emocionante que cautiva a los jugadores con su narrativa intrigante y su mundo inquietante. Prepárate para sumergirte en una aventura llena de suspense y descubrimientos en un mundo donde las pesadillas se hacen realidad."
+    },
+    {
+        "id": 9,
+        "categoria": "Juegos de rol",
+        "imagen": "bg3.jpg",
+        "nombre": "Baldur's Gate 3",
+        "edicion": "Edición Estándar",
+        "precio": "$69.900",
+        "descripcion": "Un antiguo mal ha regresado a Puerta de Baldur con la intención de devorarla desde dentro. El destino de Faerun está en tus manos. Solo, puedes resistir. Pero juntos, podéis vencer. Reúne a tu grupo y regresa a los Reinos Olvidados en una historia de compañerismo y traición, sacrificio y supervivencia, y el atractivo del poder absoluto. Misteriosas habilidades están despertando en tu interior, extraídas de un parásito de la mente plantado en tu cerebro. Resiste y vuelve a la oscuridad contra sí misma. O abraza la corrupción y conviértete en el mal supremo."
+    },
+    {
+        "id": 10,
+        "categoria": "Juegos de rol",
+        "imagen": "w3ce.jpg",
+        "nombre": "The Witcher 3: Wild Hunt Complete Edition",
+        "edicion": "Edición Completa",
+        "precio": "$19.900",
+        "descripcion": "\"The Witcher 3: Wild Hunt Complete Edition\" es la versión definitiva del exitoso juego de rol de mundo abierto desarrollado por CD Projekt Red. Este juego, basado en la popular serie de libros de Andrzej Sapkowski, te sumerge en un vasto y oscuro mundo de fantasía lleno de magia, monstruos y conflictos políticos.\nEn \"The Witcher 3: Wild Hunt\", asumes el papel de Geralt de Rivia, un cazador de monstruos conocido como un brujo. Tu objetivo principal es encontrar a la hija adoptiva de Geralt, Ciri, mientras te enfrentas a una amenaza cósmica conocida como la Cacería Salvaje. A lo largo de la historia, tomarás decisiones difíciles que influirán en el destino de los personajes y el mundo que te rodea.\nEl juego presenta una narrativa rica y ramificada, misiones secundarias interesantes y un vasto mundo abierto que puedes explorar libremente. Te encontrarás con una amplia variedad de personajes memorables, cada uno con su propia historia y motivaciones. Además, podrás mejorar las habilidades de Geralt, adquirir armas y armaduras poderosas y dominar el arte de la magia y el combate con espadas.\nLa Complete Edition incluye el juego base junto con sus dos expansiones aclamadas por la crítica: \"Hearts of Stone\" y \"Blood and Wine\". Estas expansiones agregan nuevas regiones, misiones, enemigos y una historia épica adicional que amplía aún más la experiencia de juego.\nCon gráficos impresionantes, una banda sonora inmersiva y una jugabilidad profunda, \"The Witcher 3: Wild Hunt Complete Edition\" es un título imprescindible para los fanáticos de los juegos de rol y una oportunidad perfecta para sumergirte en el fascinante mundo de Geralt de Rivia."
+    }
+]
+
+const categoriaData = [
+    {
+        "id": 10,
+        "categoria": "Juegos de rol",
+        "imagen": "jdr.jpeg",
+        "descripcion": "En los juegos de rol (RPG, por sus siglas en inglés \"Role-Playing Game\")los jugadores asumen los roles de personajes en un entorno ficticio.\nEstos juegos se centran en la narrativa y permiten a los jugadores tomar decisiones que influyen en el desarrollo de la historia y de sus personajes.\nLos elementos clave de los RPG incluyen la construcción de un personaje, el manejo de atributos como la salud, la magia, la fuerza, etc., y el avance a través de misiones o desafíos que a menudo siguen una trama compleja."
+    },{
+        "id": 8,
+        "categoria": "Terror",
+        "imagen": "terror.jpg",
+        "descripcion": "Los juegos de terror se centran en ofrecer experiencias diseñadas para asustar, inquietar o perturbar a los jugadores a través de atmósferas opresivas, narrativas inquietantes y desafíos psicológicos. Estos juegos utilizan una variedad de técnicas para evocar miedo, incluyendo la creación de una sensación de vulnerabilidad al limitar los recursos o la capacidad de lucha del jugador, ambientaciones oscuras y claustrofóbicas, enemigos amenazantes y uso efectivo del sonido y la música para aumentar la tensión. La trama a menudo juega un papel crucial, explorando temas oscuros y presentando historias llenas de misterio, sobrenaturales o de horror psicológico. La exploración y la resolución de puzzles suelen ser componentes clave, obligando a los jugadores a navegar por entornos peligrosos mientras descubren la historia subyacente. Los juegos de terror buscan no solo entretener, sino también provocar una respuesta emocional profunda, sumergiendo a los jugadores en experiencias que desafían sus miedos y expectativas."
+    },{
+        "id": 6,
+        "categoria": "Estrategia",
+        "imagen": "estrategia.jpg",
+        "descripcion": "Los juegos de estrategia se centran en el pensamiento táctico y la planificación para lograr la victoria. Estos juegos desafían a los jugadores a construir, administrar recursos, tomar decisiones estratégicas y controlar unidades o elementos dentro del juego en escenarios que pueden cambiar basados en sus acciones. Los juegos de estrategia a menudo se dividen en dos subgéneros principales: estrategia en tiempo real (RTS) y estrategia por turnos. Los RTS requieren que los jugadores tomen decisiones rápidas y gestionen operaciones en tiempo real, mientras que los juegos de estrategia por turnos permiten a los jugadores pensar detenidamente en cada movimiento sin la presión del tiempo. Estos juegos pueden situarse en una variedad de contextos, desde batallas históricas hasta conflictos futuristas, y suelen enfocarse en la conquista o la defensa de territorios, la economía y la logística militar. La profundidad estratégica, el análisis y la anticipación son clave, ya que los jugadores deben adaptarse a situaciones en constante cambio para superar a sus oponentes y alcanzar objetivos específicos."
+    },{
+        "id": 4,
+        "categoria": "Deporte",
+        "imagen": "deportes.jpg",
+        "descripcion": "Los videojuegos de deporte simulan la experiencia de jugar y competir en eventos deportivos reales, permitiendo a los jugadores asumir el control de equipos o atletas individuales. Estos juegos se esfuerzan por ofrecer una representación fiel de las reglas, estrategias y desafíos físicos de los deportes reales, incluyendo fútbol, baloncesto, béisbol, tenis, entre otros. Los jugadores pueden gestionar sus equipos, realizar estrategias, ejecutar jugadas y competir en ligas o torneos. Muchos juegos de deporte incorporan modos de carrera, donde los jugadores pueden desarrollar la carrera de un atleta desde sus inicios hasta convertirse en una estrella, o modos de gestión, donde se encargan de todos los aspectos operativos de un equipo deportivo. La jugabilidad puede variar desde controles sencillos y accesibles hasta simulaciones detalladas que buscan replicar con precisión la experiencia del deporte. Con frecuencia, estos juegos se actualizan anualmente para reflejar los cambios en los equipos reales, atletas y ligas, manteniendo a los jugadores comprometidos con contenidos frescos y realistas."
+    },{
+        "id": 2,
+        "categoria": "Acción-aventura",
+        "imagen": "accion-aventura.jpg",
+        "descripcion": "Los juegos de acción-aventura combinan elementos de ambos géneros de acción y aventura, ofreciendo a los jugadores una experiencia dinámica que enfatiza tanto la resolución de puzzles y la exploración como el combate y la habilidad física. En estos juegos, los jugadores se embarcan en aventuras a través de mundos ricos y detallados, enfrentándose a desafíos que requieren tanto destreza como pensamiento crítico. El gameplay se centra en la interacción con el entorno, la solución de acertijos, la búsqueda de objetos y el combate contra enemigos o jefes. Los títulos de acción-aventura suelen ofrecer una narrativa profunda que se desarrolla a medida que los jugadores progresan, con personajes bien desarrollados y mundos inmersivos que fomentan la exploración. La combinación de acción rápida y elementos de aventura hacen de este género uno de los más populares y versátiles en el mundo de los videojuegos."
+    }
+]
+let allGames = []; // almacenamos los juegos
+
+async function loadGames() {
+    /*try { // Aquí comenté todo este bloque para inhabilitarlo porque no permitía cargar directamente los datos desde el .json que finalmente descarté.
+      const response = await fetch('jsonData.json');
+      allGames = await response.json();
+  
+      displayGames(allGames);
+    } catch (error) {
+      console.error('Error loading games:', error);
+    } */
+    displayGames(gamesData, false, null);
+  }
+  
+function displayGames(gamesList, displaydescripcion = false, filtroCategoria = null, filtroId = null) {
+    const mainContent = document.getElementById('main-content');
+    mainContent.innerHTML = ''; // Limpiar el contenido actual
+
+    let filteredGames = gamesList;
+
+    // Filtrar juegos por categoría si se proporciona
+    if (filtroCategoria) {
+        filteredGames = filteredGames.filter(game => game.categoria === filtroCategoria);
+// Encontrar el objeto de categoría que coincide con filtroCategoria
+    const categoriaObj = categoriaData.find(cat => cat.categoria === filtroCategoria);
+    
+    // Si se encuentra un objeto de categoría y tiene una imagen, mostrarla
+    if (categoriaObj && categoriaObj.imagen) {
+        const categoryImage = document.createElement('img');
+        categoryImage.src = categoriaObj.imagen;
+        categoryImage.className = 'category-image';
+        mainContent.appendChild(categoryImage);
+
+        if (categoriaObj.descripcion) {
+            const categoryDescription = document.createElement('p');
+            categoryDescription.innerText = categoriaObj.descripcion;
+            categoryDescription.className = 'article-description';
+            mainContent.appendChild(categoryDescription);
+        }
+    }
+    }
+
+    // Filtrar por ID si se proporciona
+    if (filtroId !== null) {
+        filteredGames = filteredGames.filter(game => game.id === filtroId);
+    }
+
+    filteredGames.forEach(game => {
+        const gameContainer = document.createElement('div');
+        gameContainer.className = 'game-container';
+        gameContainer.setAttribute('data-id', game.id);
+
+        let gameContent = `
+        <h3>${game.nombre}</h3>
+        <p>Categoría: ${game.categoria}</p>
+        <img src="${game.imagen}" class="article-image">
+        <p>Edición: ${game.edicion}</p>
+        <p>Precio: ${game.precio}</p>
+    `;
+    
+    if (displaydescripcion) {
+        gameContent += `<p>${game.descripcion}</p>`;
+    }
+    gameContainer.innerHTML = gameContent;
+    
+    gameContainer.addEventListener('click', function() {
+        displayGames(gamesList, true, null, game.id);
+    });
+
+    mainContent.appendChild(gameContainer);
+    }
+    
+    )
+    
+}
+function filterByCategory(filtroCategoria) {
+    displayGames(gamesData, false, filtroCategoria);
+}
+
+document.addEventListener('DOMContentLoaded', loadGames);

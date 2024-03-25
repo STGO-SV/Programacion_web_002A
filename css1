@@ -19,6 +19,7 @@ body {
     font-family: Arial, sans-serif;
     color: var(--color-texto);
     background-color: var(--color-fondo);
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -40,6 +41,7 @@ header {
 
 nav {
     flex: 0 0 200px;
+    height: 100%;
     background-color: var(--color-nav);
     padding: 1rem;
 }
@@ -65,6 +67,12 @@ nav li a:hover {
 main {
     flex-grow: 1;
     padding: 1rem;
+    overflow-y: auto;
+}
+
+#main-content, #formContent {
+    flex-grow: 1;
+    height: 100%; 
     overflow-y: auto;
 }
 
@@ -178,4 +186,13 @@ input[type="reset"] {
 button:hover,
 input[type="reset"]:hover {
     opacity: 0.9;
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    width: 100%;
 }
